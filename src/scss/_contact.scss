@@ -1,0 +1,40 @@
+#contact {
+
+  .form-control {
+    border-radius: 2px !important;
+  }
+
+  .btn{
+    margin-left: 30%;
+    width: 40%;
+  }
+  .contact-info {
+    text-align: center;
+    h4 {
+      margin-top: 20px;
+    }
+
+    hr{
+      border-color: $white;
+    }
+
+    .contact-adress{
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    i{
+      color: $white;
+      font-size: 54px;
+    }
+
+    @media(min-width: 992px) {
+      text-align: left;
+      padding-left: 30px;
+
+      h4 {
+        margin-top: -5px;
+      }
+    }
+  }
+}

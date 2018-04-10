@@ -1,0 +1,98 @@
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .carousel-caption{
+    position: center;
+    text-align: center;
+    top: 30%;
+    height: 280px;
+
+    background-color: rgba(36, 89, 148, 0.35);
+
+    border-radius: 2px;
+  }
+
+  .clip-text{
+    padding-top: 40px;
+    font-size: 7em;
+    font-weight: bold;
+    line-height: 1;
+
+    text-align: center;
+    /*
+    color: #fff;
+    background-color: #000000;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    filter: brightness(4);
+    background-size: contain;
+
+*/
+  }
+
+  p{
+    font-size: 1.9em;
+    font-weight: bold;
+  }
+
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    @media(min-width: 992px) {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+3,207cca+16&1+0,0+42 */
+      background: -moz-linear-gradient(top, rgba(30, 87, 153, 1) 0%, rgba(30, 87, 153, 0.93) 3%, rgba(32, 124, 202, 0.62) 16%, rgba(32, 124, 202, 0) 42%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(30, 87, 153, 1) 0%, rgba(30, 87, 153, 0.93) 3%, rgba(32, 124, 202, 0.62) 16%, rgba(32, 124, 202, 0) 42%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(30, 87, 153, 1) 0%, rgba(30, 87, 153, 0.93) 3%, rgba(32, 124, 202, 0.62) 16%, rgba(32, 124, 202, 0) 42%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#00207cca', GradientType=0); /* IE6-9 */
+    }
+
+  }
+
+  @media(max-width: 1400px) {
+    .carousel-caption{
+      height: 220px;
+      top: 35%;
+    }
+    .clip-text{
+      font-size: 5em;
+      padding-top: 20px;
+    }
+
+    p{
+      font-size: 1.7em;
+    }
+  }
+
+  @media(max-width: 1024px) {
+    .carousel-caption{
+      height: 155px;
+      top: 40%;
+    }
+    .clip-text{
+      font-size: 3em;
+      padding-top: 10px;
+    }
+
+    p{
+      font-size: 1.4em;
+    }
+  }
+
+  @media(max-width: 767px) {
+    height: 70vh;
+    margin-top: 55px;
+  }
+}
